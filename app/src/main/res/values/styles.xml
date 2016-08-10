@@ -8,17 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="ButtonStyle">
-        <item name="android:layout_width">190dp</item>
+    <style name="ViewStyle">
+        <item name="android:layout_width">@dimen/distance_190dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/distance_40dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/text_size_19sp</item>
+    </style>
+
+    <style name="ViewStyle.Button">
+        <item name="android:layout_marginTop">@dimen/distance_16dp</item>
         <item name="android:background">@drawable/selector_button</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
     </style>
-    
+
     <style name="textAppearanceMedium" parent="TextAppearance.AppCompat.Medium">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
     </style>
 
 </resources>
