@@ -3,6 +3,7 @@ package com.myapplicationcollections;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,28 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void showToastPopularMovie(View view) {
-        showToast(makeMessage(getString(R.string.popular_movies)));
-    }
-
-    public void showToastStockHawk(View view) {
-        showToast(makeMessage(getString(R.string.stock_hawk)));
-    }
-
-    public void showToastBuildBigger(View view) {
-        showToast(makeMessage(getString(R.string.build_bigger)));
-    }
-
-    public void showToastMakeMaterial(View view) {
-        showToast(makeMessage(getString(R.string.make_material)));
-    }
-
-    public void showToastGoUbiquitous(View view) {
-        showToast(makeMessage(getString(R.string.go_ubiquitous)));
-    }
-
-    public void showToastCapstone(View view) {
-        showToast(makeMessage(getString(R.string.capstone)));
+    public void showToast(View view) {
+        Button button = (Button) view;
+        showToast(makeMessage(button.getText().toString()));
     }
 
     public String makeMessage(String message) {

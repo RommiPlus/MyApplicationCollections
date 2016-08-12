@@ -21,6 +21,7 @@
         <item name="android:background">@drawable/selector_button</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:onClick">showToast</item>
     </style>
 
     <style name="textAppearanceMedium" parent="TextAppearance.AppCompat.Medium">
